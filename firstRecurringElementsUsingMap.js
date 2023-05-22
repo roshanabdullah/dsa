@@ -1,3 +1,21 @@
+//Naive solution
+//Time Complexity: O(n^2)
+const FirstRecurringChar = (array) => {
+  //Loop through array outer array to increment index by 1 and inner array to decrement index by 1
+  for (let i=1;i<array.length;i++)
+  {
+    for (let j=i-1;j>=0;j--)
+    {
+      if (array[i] === array[j])
+        return array[i]
+    }
+  }
+  return undefined
+}
+ 
+console.log(FirstRecurringChar([2, 1, 1, 2]))// O(n^2)
+
+
 function firstRecurringElements2(arr){
 
   let map = {}; // creating an empty hash map
