@@ -21,4 +21,4 @@ function firstRecurringElements2(arr){
 }
 
 
-console.log(firstRecurringElements2([3, 5, 1, 2, 0, 5, 1, 2, 4]))
+console.log(firstRecurringElements2([3, 5, 1, 2, 0, 5, 1, 2, 4])) // O(n)
