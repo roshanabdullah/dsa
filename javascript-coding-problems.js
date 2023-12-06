@@ -47,5 +47,19 @@ function FizzBuzz(n) {
 FizzBuzz(20)
 
 
+// two sum
+var twoSum = function(nums, target) {
+   let indices = {}
+
+   for (let i=0; i<nums.length; i++) {
+       const difference = target - nums[i]
+       if(difference in indices) {
+           return [indices[difference], i]
+       }
+    indices[nums[i]] = i;
+   }
+   return []
+};
+
 
 
